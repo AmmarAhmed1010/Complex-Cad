@@ -20,7 +20,7 @@ const LandingPage = () => {
       <section className="home" id="Home">
         <div className="content">
           <h1>
-            Hi, it's <span>Hasham Rana</span>
+            I am<span>Hasham Rana</span>
           </h1>
           <h3 className="text-animation">
             I specialize in <span></span>
