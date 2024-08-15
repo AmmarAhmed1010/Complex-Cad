@@ -2,7 +2,7 @@
     --main-color: #f1e213;
     --white: #FFF;
     --text-color: #FFF;
-    --bg-color: #000; /* Changed to black */
+    --bg-color: #000;
 }
 
 * {
@@ -11,7 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     text-transform: capitalize;
-    transition: all .2s linear;
+    transition: all .3s ease-in-out; /* Updated transition time */
     text-decoration: none;
 }
 
@@ -32,7 +32,7 @@ html {
 }
 
 body {
-    background-color: var(--bg-color); /* Background color set to black */
+    background-color: var(--bg-color);
 }
 
 .header {
@@ -41,17 +41,19 @@ body {
     left: 0;
     right: 0;
     z-index: 100;
-    background-color: var(--bg-color); /* Background color set to black */
+    background-color: var(--bg-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2rem 5%;
+    transition: background-color 0.3s ease; /* Added transition for header */
 }
 
 .logo {
     font-size: 2rem;
     color: var(--text-color);
     font-weight: 600;
+    transition: color 0.3s ease; /* Added transition for logo color */
 }
 
 .logo span {
@@ -63,6 +65,7 @@ body {
     color: var(--text-color);
     font-weight: 500;
     margin: 0 1rem;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Added transitions */
 }
 
 .header .navbar a#Home {
@@ -85,6 +88,7 @@ section {
     align-items: center;
     justify-content: center;
     gap: 5rem;
+    animation: fadeIn 2s ease-in-out; /* Added fade-in animation */
 }
 
 .home .content {
@@ -93,11 +97,14 @@ section {
     align-items: start;
     justify-content: center;
     gap: 1rem;
+    opacity: 0;
+    animation: fadeInUp 2s ease-in-out 0.5s forwards; /* Added fade-in-up animation */
 }
 
 .home .content h1 {
     font-size: 4rem;
     color: var(--text-color);
+    animation: textFadeIn 2s ease-out; /* Added text fade-in animation */
 }
 
 .home .content h1 span {
@@ -107,6 +114,7 @@ section {
 .home .content h3 {
     font-size: 2rem;
     color: var(--text-color);
+    animation: textFadeIn 2s ease-out 0.5s; /* Added text fade-in animation */
 }
 
 .home .content p {
@@ -116,10 +124,12 @@ section {
     width: 50rem;
     margin-bottom: 1rem;
     text-align: left;
+    transition: color 0.3s ease; /* Added transition for paragraph color */
 }
 
 .home .content .flex-btn {
     display: inline-block;
+    animation: buttonFadeIn 2s ease-out 1s forwards; /* Added button fade-in animation */
 }
 
 .home .content .flex-btn .btn {
@@ -130,6 +140,7 @@ section {
     font-weight: 500;
     border: .2rem solid var(--main-color);
     border-radius: 3rem;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Added transitions */
 }
 
 .home .content .flex-btn .btn.hire {
@@ -151,6 +162,7 @@ section {
     justify-content: center;
     gap: 1rem;
     margin-bottom: 2rem;
+    animation: iconFadeIn 2s ease-out 1.5s forwards; /* Added icon fade-in animation */
 }
 
 .home .content .icons i {
@@ -159,6 +171,7 @@ section {
     border: .2rem solid var(--main-color);
     padding: 1rem;
     border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Added transitions */
 }
 
 .home .content .icons i:hover {
@@ -174,6 +187,7 @@ section {
     width: 42rem;
     object-fit: cover;
     box-shadow: 0 0 2.5rem var(--main-color);
+    transition: box-shadow 0.3s ease; /* Added transition for image box-shadow */
 }
 
 .home img:hover {
@@ -187,6 +201,7 @@ section {
     color: var(--text-color);
     min-width: 28rem;
     font-weight: 600;
+    animation: textAnimation 5s steps(4, end) infinite; /* Added text animation */
 }
 
 .text-animation span {
@@ -207,8 +222,7 @@ section {
     height: 100%;
     border-left: 3px solid var(--bg-color);
     right: -8px;
-    animation: cursor 0.6s infinite,
-        typing 20s steps(14) infinite;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
 
 @keyframes cursor {
@@ -241,6 +255,70 @@ section {
     }
     5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
         width: calc(100% + 8px);
+    }
+}
+
+@keyframes textFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes textFadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes buttonFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes iconFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -283,11 +361,11 @@ section {
 
     .logo {
         margin: 10px 20px;
-        font-size: 3rem; /* Adjust size for smaller screens */
+        font-size: 3rem;
     }
 
     .header .navbar a {
-        font-size: 1.2rem; /* Adjust size for smaller screens */
+        font-size: 1.2rem;
     }
 
     .menu i {
