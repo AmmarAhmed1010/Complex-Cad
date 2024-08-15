@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import AroraBackground from "@/components/AroraBackground";
 import Cards from "@/components/Cards";
 import Cards3 from "@/components/Cards3";
+import LandingPage from "@/components/LandingPage";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,8 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+      </head>
       <body className={inter.className}>
-        <AroraBackground/>
+        <LandingPage/>
        <Navbar/>
        <Cards/>
        <Cards3/>
