@@ -361,7 +361,7 @@ section {
     .header {
         position: relative;
         padding: 0;
-        margin-bottom: o;
+        margin-bottom: 1rem;
     }
 
     .logo {
