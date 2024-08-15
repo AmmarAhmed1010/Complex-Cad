@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import AroraBackground from "@/components/AroraBackground";
 import Cards from "@/components/Cards";
+import Cards3 from "@/components/Cards3";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <AroraBackground/>
        <Navbar/>
        <Cards/>
+       <Cards3/>
         {children}
         </body>
     </html>
