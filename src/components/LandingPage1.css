@@ -50,10 +50,11 @@ body {
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Increased font size */
     color: var(--text-color);
     font-weight: 600;
     transition: color 0.3s ease; /* Added transition for logo color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
 }
 
 .logo span {
@@ -61,11 +62,12 @@ body {
 }
 
 .header .navbar a {
-    font-size: 1.5rem;
+    font-size: 1.8rem; /* Increased font size */
     color: var(--text-color);
     font-weight: 500;
     margin: 0 1rem;
     transition: color 0.3s ease, text-decoration 0.3s ease; /* Added transitions */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
 }
 
 .header .navbar a#Home {
@@ -102,9 +104,10 @@ section {
 }
 
 .home .content h1 {
-    font-size: 4rem;
+    font-size: 5rem; /* Increased font size */
     color: var(--text-color);
     animation: textFadeIn 2s ease-out; /* Added text fade-in animation */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
 }
 
 .home .content h1 span {
@@ -112,14 +115,15 @@ section {
 }
 
 .home .content h3 {
-    font-size: 2rem;
+    font-size: 3rem; /* Increased font size */
     color: var(--text-color);
     animation: textFadeIn 2s ease-out 0.5s; /* Added text fade-in animation */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
 }
 
 .home .content p {
     color: var(--text-color);
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Increased font size */
     line-height: 1.5;
     width: 50rem;
     margin-bottom: 1rem;
@@ -197,11 +201,12 @@ section {
 }
 
 .text-animation {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Increased font size */
     color: var(--text-color);
     min-width: 28rem;
     font-weight: 600;
     animation: textAnimation 5s steps(4, end) infinite; /* Added text animation */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
 }
 
 .text-animation span {
@@ -342,11 +347,11 @@ section {
     .home img {
         height: 35rem;
         width: 35rem;
-        margin-top: 2rem;
+        margin-top: 0rem;
     }
 
     .home {
-        padding: 8rem 0;
+        padding: 4rem 0;
     }
 
     section {
@@ -356,7 +361,7 @@ section {
     .header {
         position: relative;
         padding: 0;
-        margin-bottom: 0;
+        margin-bottom: o;
     }
 
     .logo {
@@ -365,7 +370,7 @@ section {
     }
 
     .header .navbar a {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .menu i {
