@@ -238,19 +238,19 @@ section {
 
 @keyframes words {
     0%, 20% {
-        content: "CAD Services";
+        content: "CAD SERVICES";
     }
     21%, 40% {
-        content: "2D Drafting";
+        content: "2D DRAFTING";
     }
     41%, 60% {
-        content: "CAD Services";
+        content: "CAD SERVICES";
     }
     61%, 80% {
-        content: "2D Drafting";
+        content: "2D DRAFTING";
     }
     81%, 100% {
-        content: "CAD Services";
+        content: "CAD SERVICES";
     }
 }
 
@@ -414,5 +414,8 @@ section {
 @media(max-width:450px) {
     .home .content p {
         width: 35rem;
+    }
+    .home .content{
+        padding: 0 10px;
     }
 }
