@@ -35,11 +35,11 @@ const LandingPage = () => {
             </a>
           </div>
           <div className="flex-btn">
-            <a href="#" className="btn hire">
+            <a href="https://www.instagram.com/complex_cad/?igsh=M29jdmVkYWR5cHdy" className="btn hire">
               Hire Me
             </a>
-            <a href="#" className="btn">
-              Contact
+            <a className="btn ml-3">
+              Contact: 03394011055
             </a>
           </div>
         </div>
